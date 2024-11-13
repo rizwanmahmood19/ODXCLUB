@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="13px" viewBox="0 0 16 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>matchapp_Group 3</title>
+    <g id="MatchApp-Video-Call" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-82.000000, -280.000000)" id="Group-3">
+            <g transform="translate(82.000000, 280.000000)">
+                <g id="Combined-Shape" transform="translate(2.000000, 1.000000)" fill="#FFFFFF">
+                    <path d="M8,0 C9.1045695,-2.02906125e-16 10,0.8954305 10,2 L10,2.744 L12.6000555,1.61088485 C13.1062463,1.39000163 13.6956562,1.62128905 13.9165394,2.12747978 C13.9715869,2.25363031 14,2.38978636 14,2.52742423 L14,7.47257577 C14,8.02486052 13.5522847,8.47257577 13,8.47257577 C12.8623621,8.47257577 12.7262061,8.44416265 12.6000555,8.38911515 L10,7.255 L10,8 C10,9.1045695 9.1045695,10 8,10 L2,10 C0.8954305,10 1.3527075e-16,9.1045695 0,8 L0,2 C-1.3527075e-16,0.8954305 0.8954305,2.02906125e-16 2,0 L8,0 Z"></path>
+                </g>
+                <g id="Group-Copy" transform="translate(6.500000, 6.146447) rotate(225.000000) translate(-6.500000, -6.146447) translate(2.500000, 1.646447)">
+                    <polygon id="Rectangle" fill="#1ED7DC" transform="translate(4.047601, 4.965174) rotate(45.000000) translate(-4.047601, -4.965174) " points="6.28856738 2.86399689 6.28856738 7.0663517 1.80663379 7.0663517"></polygon>
+                    <line x1="4.14644661" y1="0.5" x2="4.14644661" y2="5.5" id="Line" stroke="#1ED7DC" stroke-linecap="square"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

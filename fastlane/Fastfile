@@ -1,0 +1,328 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+min_fastlane_version("2.170.0")
+
+##### constants #####
+
+env_ios_dev = "Development"
+env_ios_staging = "Staging"
+env_ios_prod = "Production"
+
+owner = "sprylab-technologies-GmbH-Organization"
+owner_type = "organization"
+
+certificates_base_path = "ios/Certificates"
+
+provision_dev = "OneDollarXClub_Dev.mobileprovision"
+provision_adhoc = "OneDollarXClub_AdHoc.mobileprovision"
+provision_appstore = "OneDollarXClub_AppStore.mobileprovision"
+
+certificate_develop = "Develop.p12"
+certificate_distribution = "Distribution.p12"
+
+keychain_name = "OneDollarXClub_CI"
+
+##### public lanes #####
+
+lane :ios_build do |options|
+  prepare env:options[:env]
+
+  prepare_provisioning_profiles_ios env:options[:env]
+  prepare_keychain_ios
+
+  case options[:env]
+  when "prod"
+    ios_build_prod
+  when "staging"
+    ios_build_staging
+  else
+    ios_build_dev
+  end
+  zip_build
+end
+
+lane :android_build do |options|
+  prepare env:options[:env]
+  case options[:env]
+  when "prod"
+    android_build_prod
+  when "staging"
+    android_build_staging
+  else
+    android_build_dev
+  end
+  zip_build
+end
+
+##### iOS private lanes #####
+
+private_lane :ios_prepare do
+  clear_derived_data
+  ios_pod
+end
+
+private_lane :ios_pod do
+  cocoapods(
+    clean_install: true,
+    try_repo_update_on_error: true,
+    podfile: "ios/Podfile"
+  )
+end
+
+private_lane :ios_build_dev do
+  ios_prepare
+  gym(
+    configuration: "Release(#{env_ios_dev})",
+    scheme: env_ios_dev,
+    output_name: "MatchApp-#{env_ios_dev}",
+    export_method: "development"
+  )
+end
+
+private_lane :ios_build_staging do
+  ios_prepare
+  gym(
+    configuration: "Release(#{env_ios_staging})",
+    scheme: env_ios_staging,
+    output_name: "MatchApp-#{env_ios_staging}",
+    export_method: "ad-hoc"
+  )
+  app_center_beta_upload_ios
+end
+
+private_lane :ios_build_prod do
+    ios_prepare
+
+    gym(
+      configuration: "Release(#{env_ios_prod})",
+      scheme: env_ios_prod,
+      output_name: "MatchApp-#{env_ios_prod}",
+      export_method: "app-store"
+    )
+
+    backup_xcarchive(
+      destination: "./fastlane/build",
+      zip: true,
+      versioned: false
+    )
+
+    upload_prod_to_testflight
+end
+
+private_lane :upload_prod_to_testflight do
+  api_key = app_store_connect_api_key(
+    key_id: ENV["ASC_API_KEY_ID"],
+    issuer_id: ENV["ASC_API_KEY_ISSUER_ID"],
+    key_content: ENV["ASC_API_KEY"],
+    is_key_content_base64: true,
+    duration: 1200,
+    in_house: false
+  )
+
+  upload_to_testflight(
+    api_key: api_key,
+    skip_submission: true,
+    ipa: "./fastlane/build/MatchApp-#{env_ios_prod}.ipa",
+    skip_waiting_for_build_processing: true,
+    notify_external_testers: false
+  )
+end
+
+private_lane :prepare_keychain_ios do
+    # create a custom keychain
+    create_keychain(
+      name: keychain_name,
+      password: "",
+      unlock: true,
+      timeout: 0
+    )
+
+    # import the developer certificate
+    import_certificate(
+      certificate_path: "#{certificates_base_path}/#{certificate_develop}",
+      certificate_password: ENV["CERTIFICATE_PASSWORD"],
+      keychain_name: keychain_name,
+      keychain_password: ""
+    )
+
+    # import the distribution certificate
+    import_certificate(
+      certificate_path: "#{certificates_base_path}/#{certificate_distribution}",
+      certificate_password: ENV["CERTIFICATE_PASSWORD"],
+      keychain_name: keychain_name,
+      keychain_password: ""
+    )
+end
+
+private_lane :prepare_provisioning_profiles_ios do |options|
+  path = "#{certificates_base_path}/"
+
+  case options[:env]
+  when "prod"
+    path += provision_appstore
+  when "staging"
+    path += provision_adhoc
+  else
+    path += provision_dev
+  end
+
+  install_provisioning_profile(path: path)
+end
+
+private_lane :app_center_beta_upload_ios do |options|
+  appcenter_upload(
+    api_token: ENV["APP_CENTER_API_TOKEN"],
+    owner_name: owner,
+    owner_type: owner_type,
+    app_name: "MatchApp-iOS-dev",
+    destinations: "Galaniprojects,Sprylab",
+    file: "./fastlane/build/MatchApp-Staging.ipa",
+    dsym: "./fastlane/build/MatchApp-Staging.app.dSYM.zip",
+    notify_testers: false
+  )
+end
+
+##### Android private lanes #####
+
+private_lane :android_build_dev do
+  gradle(
+    task: "assemble",
+    flavor: "development",
+    build_type: "beta",
+    print_command: false,
+    project_dir: "android/"
+  )
+  copy_apk
+  gradle_clean
+end
+
+private_lane :android_build_staging do
+  gradle(
+    task: "assemble",
+    flavor: "staging",
+    build_type: "beta",
+    print_command: false,
+    project_dir: "android/"
+  )
+  copy_apk
+  gradle_clean
+  app_center_beta_upload_android
+end
+
+private_lane :android_build_prod do
+  sh 'echo "$ANDROID_KEY_STORE_BASE64" | base64 -d > ../android/app/release.keystore'
+  sh 'ls ../android'
+  sh 'ls ../android/app'
+  gradle(
+    task: "bundle",
+    flavor: "production",
+    build_type: "release",
+    print_command: false,
+    project_dir: "android/",
+  )
+  copy_aab
+  upload_prod_to_play_store
+  gradle_clean
+end
+
+private_lane :copy_aab do
+  copy_artifacts(
+    artifacts: [
+      lane_context[SharedValues::GRADLE_AAB_OUTPUT_PATH],
+      lane_context[SharedValues::GRADLE_MAPPING_TXT_OUTPUT_PATH]
+    ],
+    target_path: './fastlane/build',
+    keep_original: false
+  )
+end
+
+private_lane :copy_apk do
+  copy_artifacts(
+    artifacts: [
+      lane_context[SharedValues::GRADLE_APK_OUTPUT_PATH],
+      lane_context[SharedValues::GRADLE_MAPPING_TXT_OUTPUT_PATH]
+    ],
+    target_path: './fastlane/build',
+    keep_original: false
+  )
+end
+
+private_lane :gradle_clean do
+  gradle(
+    task: "clean",
+    project_dir: "android/"
+  )
+end
+
+private_lane :app_center_beta_upload_android do |options|
+  appcenter_upload(
+    api_token: ENV["APP_CENTER_API_TOKEN"],
+    owner_name: owner,
+    owner_type: owner_type,
+    app_name: "MatchApp-Android-dev",
+    destinations: "Galaniprojects,Sprylab",
+    file: "./fastlane/build/app-staging-beta.apk",
+    mapping: "./fastlane/build/mapping.txt",
+    notify_testers: false,
+  )
+end
+
+private_lane :upload_prod_to_play_store do
+  supply(
+    package_name: "com.onedollarxclub.casual.dating.date.single.flirt.app",
+    track: "internal",
+    json_key_data: ENV["GOOGLE_PLAY_STORE_JSON_KEY_DATA"],
+    aab: "./fastlane/build/app-production-release.aab",
+    mapping: "./fastlane/build/mapping.txt" ,
+    skip_upload_apk: true,
+    skip_upload_metadata: true,
+    skip_upload_changelogs: true,
+    skip_upload_images: true,
+    skip_upload_screenshots: true,
+    release_status: "draft"
+  )
+end
+
+##### Shared private lanes #####
+
+private_lane :prepare do |options|
+  setEnv_via_sh env:options[:env]
+  setConfig_via_sh env:options[:env]
+  clean_build_dir
+end
+
+private_lane :clean_build_dir do
+  sh("rm -rf ./build")
+end
+
+private_lane :zip_build do
+  sh("zip -j ./build/build_output.zip ./build/*")
+end
+
+private_lane :setEnv_via_sh do |options|
+  env_name = ""
+  case options[:env]
+  when "prod"
+    env_name = "production"
+  when "staging"
+    env_name = "staging"
+  else
+    env_name = "development"
+  end
+  sh("cp ../envs/#{env_name}.json ../env.json")
+end
+
+private_lane :setConfig_via_sh do |options|
+  sh("cp ../config/#{options[:env]}/google-services.json ../android/app/google-services.json")
+  sh("cp ../config/#{options[:env]}/GoogleService-Info.plist ../ios/GoogleService-Info.plist")
+end

@@ -1,0 +1,5 @@
+<resources>
+    <string name="notification.match.title">You’re a total Catch!</string>
+    <string name="notification.match.body">%1$s findet dich auch toll. Schau dir deinen neuen Catch an!</string>
+    <string name="notification.picture.rejected.title">Ein kürzlich hochgeladenes Foto entspricht nicht unseren Richtlinien und wurde gelöscht.</string>
+</resources>

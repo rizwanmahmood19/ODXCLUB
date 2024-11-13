@@ -1,0 +1,125 @@
+{
+  "project_info": {
+    "project_number": "805894104540",
+    "firebase_url": "https://matchapp-prod.firebaseio.com",
+    "project_id": "matchapp-prod",
+    "storage_bucket": "matchapp-prod.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:805894104540:android:ecf48550e106481e41db19",
+        "android_client_info": {
+          "package_name": "com.onedollarxclub.casual.dating.date.single.flirt.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "805894104540-41u1tnfctam1s81sbm45nj3mdeal7cnj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.onedollarxclub.casual.dating.date.single.flirt.app",
+            "certificate_hash": "de3e8e1197361217b30ca075dd71cc53c485b7f8"
+          }
+        },
+        {
+          "client_id": "805894104540-iiepqbssmjopabgrujearj5s9faiau77.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.onedollarxclub.casual.dating.date.single.flirt.app",
+            "certificate_hash": "9d6d3fd629ef49c0a23850d00d3a358c34112468"
+          }
+        },
+        {
+          "client_id": "805894104540-pkuvdto7lpqvmjt0lbe18mneg0afb973.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.onedollarxclub.casual.dating.date.single.flirt.app",
+            "certificate_hash": "226165b01a2d6ea39dd247f34266944cae9508c8"
+          }
+        },
+        {
+          "client_id": "805894104540-mnvkt5jq6364h0fcvh8hmrol67v40iqq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPXdmXi9cCCSSCxZg9SIfak8Mb86qFGlM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "805894104540-mnvkt5jq6364h0fcvh8hmrol67v40iqq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "805894104540-pagu02njc3crhva12ja1l4msh6p2uu6e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "one.appconception.onedollarxclub",
+                "app_store_id": "1536551976"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:805894104540:android:1bd352c96e0bd15341db19",
+        "android_client_info": {
+          "package_name": "one.appconception.onedollarxclub.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "805894104540-0p4b1utau00d04qplu894hsb0cdpj0e1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "one.appconception.onedollarxclub.android",
+            "certificate_hash": "de3e8e1197361217b30ca075dd71cc53c485b7f8"
+          }
+        },
+        {
+          "client_id": "805894104540-np8r9ios30d29u1bmke7rrgb90pfdji3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "one.appconception.onedollarxclub.android",
+            "certificate_hash": "9d6d3fd629ef49c0a23850d00d3a358c34112468"
+          }
+        },
+        {
+          "client_id": "805894104540-mnvkt5jq6364h0fcvh8hmrol67v40iqq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPXdmXi9cCCSSCxZg9SIfak8Mb86qFGlM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "805894104540-mnvkt5jq6364h0fcvh8hmrol67v40iqq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "805894104540-pagu02njc3crhva12ja1l4msh6p2uu6e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "one.appconception.onedollarxclub",
+                "app_store_id": "1536551976"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

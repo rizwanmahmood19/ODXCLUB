@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>03B246FD-AD43-4698-9DB4-645FE53C265AMatchapp_</title>
+    <defs>
+        <polygon id="path-1" points="0 0 12 0 12 12 0 12"></polygon>
+    </defs>
+    <g id="MatchApp-PassionAlert" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MatchApp-PassionAlert-Start--4x3-v2-active" transform="translate(-256.000000, -341.000000)">
+            <g id="Group-2-Copy-2" transform="translate(194.000000, 341.000000)">
+                <g id="elements/icon/remove" transform="translate(62.000000, 0.000000)">
+                    <g id="Group-3" transform="translate(4.000000, 4.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M8.7183663,6 L8.7183663,6 L11.4368612,3.28144688 C12.1877129,2.53092187 12.1877129,1.31376163 11.4368612,0.562893756 C10.6863522,-0.187631252 9.46887522,-0.187631252 8.7183663,0.562893756 L5.99987143,3.28144688 L3.28137656,0.562893756 C2.53086764,-0.187631252 1.31373347,-0.187631252 0.562881694,0.562893756 C-0.187627231,1.31376163 -0.187627231,2.53092187 0.562881694,3.28144688 L3.28137656,6 L3.28171942,6 L0.562881694,8.71855312 C-0.187627231,9.46942099 -0.187627231,10.6862384 0.562881694,11.4371062 C1.31373347,12.1876313 2.53086764,12.1876313 3.28171942,11.4371062 L5.99987143,8.71855312 L8.7183663,11.4371062 C9.46887522,12.1876313 10.6860094,12.1876313 11.4368612,11.4371062 C12.1877129,10.6862384 12.1877129,9.46942099 11.4368612,8.71855312 L8.7183663,6 Z" id="Fill-1" fill="#E1007A" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,60 @@
+{
+  "_args": [
+    [
+      "git+https://github.com/react-native-audio-toolkit/react-native-audio-toolkit.git#ceaed43ef522d0a6089e4dcc6ad1a868e88db0e4",
+      "/home/julius/Projects/matchapp/packages/app"
+    ]
+  ],
+  "_from": "git+https://github.com/react-native-audio-toolkit/react-native-audio-toolkit.git#ceaed43ef522d0a6089e4dcc6ad1a868e88db0e4",
+  "_id": "@react-native-community/audio-toolkit@git+https://github.com/react-native-audio-toolkit/react-native-audio-toolkit.git#ceaed43ef522d0a6089e4dcc6ad1a868e88db0e4",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/@react-native-community/audio-toolkit",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "git+https://github.com/react-native-audio-toolkit/react-native-audio-toolkit.git#ceaed43ef522d0a6089e4dcc6ad1a868e88db0e4",
+    "rawSpec": "git+https://github.com/react-native-audio-toolkit/react-native-audio-toolkit.git#ceaed43ef522d0a6089e4dcc6ad1a868e88db0e4",
+    "saveSpec": "git+https://github.com/react-native-audio-toolkit/react-native-audio-toolkit.git#ceaed43ef522d0a6089e4dcc6ad1a868e88db0e4",
+    "fetchSpec": "https://github.com/react-native-audio-toolkit/react-native-audio-toolkit.git",
+    "gitCommittish": "ceaed43ef522d0a6089e4dcc6ad1a868e88db0e4"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/react-native-audio-toolkit/react-native-audio-toolkit.git#ceaed43ef522d0a6089e4dcc6ad1a868e88db0e4",
+  "_spec": "git+https://github.com/react-native-audio-toolkit/react-native-audio-toolkit.git#ceaed43ef522d0a6089e4dcc6ad1a868e88db0e4",
+  "_where": "/home/julius/Projects/matchapp/packages/app",
+  "bugs": {
+    "url": "https://github.com/react-native-community/react-native-audio-toolkit/issues"
+  },
+  "dependencies": {
+    "async": "^2.6.3",
+    "eventemitter3": "^1.2.0",
+    "lodash": "^4.17.15"
+  },
+  "description": "Cross-platform audio library for React Native",
+  "directories": {
+    "doc": "docs"
+  },
+  "homepage": "https://github.com/react-native-community/react-native-audio-toolkit#readme",
+  "keywords": [
+    "react-native",
+    "react native",
+    "audio",
+    "audio toolkit",
+    "audio-toolkit"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@react-native-community/audio-toolkit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react-native-community/react-native-audio-toolkit.git"
+  },
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start"
+  },
+  "types": "typings/index.d.ts",
+  "version": "2.0.3"
+}

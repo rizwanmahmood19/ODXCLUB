@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="29px" viewBox="0 0 31 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Matchapp_ic_add_a_photo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M27,444 L27,441 L29,441 L29,444 L32,444 L32,446 L29,446 L29,449 L27,449 L27,446 L24,446 L24,444 L27,444 L27,444 Z M30,450 L30,447 L33,447 L33,444 L40,444 L41.83,446 L45,446 C46.1,446 47,446.9 47,448 L47,460 C47,461.1 46.1,462 45,462 L29,462 C27.9,462 27,461.1 27,460 L27,450 L30,450 L30,450 Z M37,459 C39.76,459 42,456.76 42,454 C42,451.24 39.76,449 37,449 C34.24,449 32,451.24 32,454 C32,456.76 34.24,459 37,459 L37,459 Z M33.8,454 C33.8,455.77 35.23,457.2 37,457.2 C38.77,457.2 40.2,455.77 40.2,454 C40.2,452.23 38.77,450.8 37,450.8 C35.23,450.8 33.8,452.23 33.8,454 L33.8,454 Z" id="path-1"></path>
+        <filter x="-26.1%" y="-28.6%" width="152.2%" height="157.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="MatchApp-MyProfil" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MatchApp_v3-male-v4c-OwnProfil_Link_to_Upload_pic" transform="translate(-20.000000, -437.000000)">
+            <g id="ic_add_a_photo">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

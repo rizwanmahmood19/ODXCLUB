@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">OneDollarXClub</string>
+    <string name="appCenterCrashes_whenToSendCrashes" moduleConfig="true" translatable="false">DO_NOT_ASK_JAVASCRIPT</string>
+    <string name="appCenterAnalytics_whenToEnableAnalytics" moduleConfig="true" translatable="false">ENABLE_IN_JS</string>
+
+    <string name="notification.match.title">You’re a total Catch!</string>
+    <string name="notification.match.body">%1$s liked you back! Check out your new Catch!</string>
+
+    <string name="notification.picture.rejected.title">A recently uploaded image does not comply with our guidelines and was deleted.</string>
+</resources>

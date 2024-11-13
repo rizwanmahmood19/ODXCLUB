@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>matchapp_Group</title>
+    <defs>
+        <polygon id="path-1" points="0 0 24 0 24 13.2413793 0 13.2413793"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="elements/button/back_profile" transform="translate(6.000000, 6.000000)">
+            <g id="Group" transform="translate(-6.000000, -6.000000)">
+                <circle id="Oval" fill="#1ED7DC" cx="18" cy="18" r="18"></circle>
+                <g id="Group-3" transform="translate(6.000000, 11.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M23.1747189,5.79469098 L3.15945119,5.79469098 L7.54004333,1.41010733 C7.86245315,1.08740373 7.86245315,0.564524783 7.54004333,0.241821188 C7.21818369,-0.0806070626 6.69523056,-0.0806070626 6.37309584,0.241821188 L0,6.62072407 L6.37309584,12.999627 C6.53430075,13.1607034 6.74557271,13.2413793 6.95656958,13.2413793 C7.16784155,13.2413793 7.37911351,13.1607034 7.54004333,12.999627 C7.86245315,12.6769234 7.86245315,12.1540444 7.54004333,11.8313408 L3.15945119,7.44675717 L23.1747189,7.44675717 C23.6305492,7.44675717 24,7.07696968 24,6.62072407 C24,6.16447846 23.6305492,5.79469098 23.1747189,5.79469098" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

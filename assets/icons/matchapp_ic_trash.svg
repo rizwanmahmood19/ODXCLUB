@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="12px" viewBox="0 0 10 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Matchapp_ic_trash</title>
+    <g id="MatchApp-VoiceMessages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MatchApp-VoiceMessages-rec" transform="translate(-227.000000, -669.000000)" fill="#00CCCC">
+            <g id="Group-3" transform="translate(108.500000, 669.000000)">
+                <path d="M119.166667,10.6666667 C119.166667,11.4 119.766667,12 120.5,12 L125.833333,12 C126.566667,12 127.166667,11.4 127.166667,10.6666667 L127.166667,2.66666667 L119.166667,2.66666667 L119.166667,10.6666667 L119.166667,10.6666667 Z M127.833333,0.666666667 L125.5,0.666666667 L124.833333,0 L121.5,0 L120.833333,0.666666667 L118.5,0.666666667 L118.5,2 L127.833333,2 L127.833333,0.666666667 L127.833333,0.666666667 Z" id="ic_trash"></path>
+            </g>
+        </g>
+    </g>
+</svg>

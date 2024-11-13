@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>805894104540-psejvhp7t87icgfsi042nk3c4igcddtk.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.805894104540-psejvhp7t87icgfsi042nk3c4igcddtk</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>805894104540-0p4b1utau00d04qplu894hsb0cdpj0e1.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAnWhvx7LKra4ELiThD-6bgVjxohydtu7M</string>
+	<key>GCM_SENDER_ID</key>
+	<string>805894104540</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.onedollarxclub.casual.dating.date.single.flirt.app</string>
+	<key>PROJECT_ID</key>
+	<string>matchapp-prod</string>
+	<key>STORAGE_BUCKET</key>
+	<string>matchapp-prod.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:805894104540:ios:d0735b9324dc658641db19</string>
+	<key>DATABASE_URL</key>
+	<string>https://matchapp-prod.firebaseio.com</string>
+</dict>
+</plist>

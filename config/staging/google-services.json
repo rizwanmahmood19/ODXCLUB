@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "664434794092",
+    "firebase_url": "https://matchapp-devstaging-new.firebaseio.com",
+    "project_id": "matchapp-devstaging-new",
+    "storage_bucket": "matchapp-devstaging-new.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664434794092:android:6d0081096bbf99a1d7c249",
+        "android_client_info": {
+          "package_name": "com.onedollarxclub.casual.dating.date.single.flirt.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "664434794092-e6q47oglctjdcmmc7g8pe94sp4ctfu0q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.onedollarxclub.casual.dating.date.single.flirt.app",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "664434794092-gvr4mjqm95t467adq1iojb3bir8tj2b6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVhKw5IPQjgQ5SEwSj3UECOemKmYnzSCI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "664434794092-gvr4mjqm95t467adq1iojb3bir8tj2b6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "664434794092-4tmgleb6ad0q0rl14b7g2thjv68easrr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.onedollarxclub.casual.dating.date.single.flirt.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

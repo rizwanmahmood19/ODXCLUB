@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>matchapp_ic_account_circle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="elements/profile_pic-circle_empty_xxl" transform="translate(-25.000000, -25.000000)" fill="#FFFFFF">
+            <path d="M55,25 C38.44,25 25,38.44 25,55 C25,71.56 38.44,85 55,85 C71.56,85 85,71.56 85,55 C85,38.44 71.56,25 55,25 L55,25 Z M55.2727273,33.7272727 C60.2527273,33.7272727 64.2727273,37.7472727 64.2727273,42.7272727 C64.2727273,47.7072727 60.2527273,51.7272727 55.2727273,51.7272727 C50.2927273,51.7272727 46.2727273,47.7072727 46.2727273,42.7272727 C46.2727273,37.7472727 50.2927273,33.7272727 55.2727273,33.7272727 L55.2727273,33.7272727 Z M55,76.8181818 C47.5,76.8181818 40.87,72.9393939 37,67.0606061 C37.09,61.030303 49,57.7272727 55,57.7272727 C60.97,57.7272727 72.91,61.030303 73,67.0606061 C69.13,72.9393939 62.5,76.8181818 55,76.8181818 L55,76.8181818 Z" id="ic_account_circle"></path>
+        </g>
+    </g>
+</svg>

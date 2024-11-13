@@ -1,0 +1,17 @@
+/*
+  InfoPlist.strings
+  app
+
+  Created by Sandro Dahl on 28.05.20.
+
+*/
+
+NSLocationWhenInUseUsageDescription = "To display how far other users are away from you, the app needs access to your location. Do you want to allow this?";
+NSLocationAlwaysAndWhenInUseUsageDescription = "To display how far other users are away from you, the app needs access to your location. Do you want to allow this?";
+NSLocationUsageDescription = "To display how far other users are away from you, the app needs access to your location. Do you want to allow this?";
+NSLocationAlwaysUsageDescription = "To display how far other users are away from you, the app needs access to your location. Do you want to allow this?";
+NSPhotoLibraryUsageDescription = "To upload pictures, the app needs access to your photo library. Do you want to allow this?";
+NSPhotoLibraryAddUsageDescription = "To upload pictures, the app needs access to your photo library. Do you want to allow this?";
+NSCameraUsageDescription = "To take pictures from the app, it needs access to your camera. Do you want to allow this?";
+NSMicrophoneUsageDescription = "To record audio, the app requires access to your microphone. Do you want to allow this?";
+NSUserTrackingUsageDescription = "We use your data to evaluate and improve the app, to develop new features and services, and to display and evaluate relevant offers and ads.";

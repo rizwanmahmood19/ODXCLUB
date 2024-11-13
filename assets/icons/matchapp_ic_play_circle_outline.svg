@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="75px" height="75px" viewBox="0 0 75 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>odxc_ic_play_circle_outline</title>
+    <g id="MatchApp-Catches/Messages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.8">
+        <g id="MatchApp-Messages-SendVideo-03a" transform="translate(-171.000000, -822.000000)" fill="#FFFFFF">
+            <path d="M201.0375,876.290625 L223.425,859.5 L201.0375,842.709375 L201.0375,876.290625 L201.0375,876.290625 Z M208.5,822.1875 C187.9035,822.1875 171.1875,838.9035 171.1875,859.5 C171.1875,880.0965 187.9035,896.8125 208.5,896.8125 C229.0965,896.8125 245.8125,880.0965 245.8125,859.5 C245.8125,838.9035 229.0965,822.1875 208.5,822.1875 L208.5,822.1875 Z M208.5,889.35 C192.045187,889.35 178.65,875.954813 178.65,859.5 C178.65,843.045187 192.045187,829.65 208.5,829.65 C224.954813,829.65 238.35,843.045187 238.35,859.5 C238.35,875.954813 224.954813,889.35 208.5,889.35 L208.5,889.35 Z" id="ic_play_circle_outline"></path>
+        </g>
+    </g>
+</svg>

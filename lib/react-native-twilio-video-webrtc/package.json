@@ -1,0 +1,69 @@
+{
+  "_from": "git+https://github.com/blackuy/react-native-twilio-video-webrtc.git#d0f6e29f057318814f8aa81e7fdc15c6b034d016",
+  "_id": "react-native-twilio-video-webrtc@2.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/react-native-twilio-video-webrtc",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "react-native-twilio-video-webrtc@git+https://github.com/blackuy/react-native-twilio-video-webrtc.git#d0f6e29f057318814f8aa81e7fdc15c6b034d016",
+    "name": "react-native-twilio-video-webrtc",
+    "escapedName": "react-native-twilio-video-webrtc",
+    "rawSpec": "git+https://github.com/blackuy/react-native-twilio-video-webrtc.git#d0f6e29f057318814f8aa81e7fdc15c6b034d016",
+    "saveSpec": "git+https://github.com/blackuy/react-native-twilio-video-webrtc.git#d0f6e29f057318814f8aa81e7fdc15c6b034d016",
+    "fetchSpec": "https://github.com/blackuy/react-native-twilio-video-webrtc.git",
+    "gitCommittish": "d0f6e29f057318814f8aa81e7fdc15c6b034d016"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/blackuy/react-native-twilio-video-webrtc.git#d0f6e29f057318814f8aa81e7fdc15c6b034d016",
+  "_spec": "react-native-twilio-video-webrtc@git+https://github.com/blackuy/react-native-twilio-video-webrtc.git#d0f6e29f057318814f8aa81e7fdc15c6b034d016",
+  "_where": "/home/julius/Projects/matchapp/packages/app",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/blackuy/react-native-twilio-video-webrtc/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "prop-types": "^15.5.10"
+  },
+  "deprecated": false,
+  "description": "Twilio Video WebRTC for React Native.",
+  "devDependencies": {
+    "@types/react": "^16.9.32",
+    "@types/react-native": "^0.62.1",
+    "babel-eslint": "^7.2.3",
+    "del": "^3.0.0",
+    "doctoc": "^1.3.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-react-docs": "^0.1.3",
+    "gulp-tap": "^1.0.1",
+    "react-docgen": "^2.15.0",
+    "standard": "^13.1.0"
+  },
+  "homepage": "https://github.com/blackuy/react-native-twilio-video-webrtc",
+  "keywords": [
+    "react-native"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "react-native-twilio-video-webrtc",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blackuy/react-native-twilio-video-webrtc.git"
+  },
+  "scripts": {
+    "ci": "yarn lint",
+    "lint": "standard 'src/**/*.js'",
+    "lint:fix": "standard 'src/**/*.js' --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "version": "2.0.0"
+}

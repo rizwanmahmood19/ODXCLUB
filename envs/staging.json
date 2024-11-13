@@ -1,6 +1,0 @@
-{
-  "ENV": "staging",
-  "BASE_URL": "https://staging.appconceptionone-datamanagement.com",
-  "STREAM_IO_APP_KEY": "qzpnawgc6bs3",
-  "SENTRY_DSN": "https://49f3dcdcf392431c950476187e86f25d@sentry.sprylabprojects.com/21"
-}

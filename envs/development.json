@@ -1,6 +1,0 @@
-{
-  "ENV": "development",
-  "BASE_URL": "https://dev-v2.appconceptionone-datamanagement.com",
-  "STREAM_IO_APP_KEY": "cepynzeqqfjh",
-  "SENTRY_DSN": "https://6c73a992068946dd96bf15bbc3529a67@sentry.sprylabprojects.com/23"
-}
